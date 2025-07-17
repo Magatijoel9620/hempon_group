@@ -1,0 +1,35 @@
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-success {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+.footer-style-4 .widget-wrapper .row {
+  margin-bottom: 20px; /* Add spacing between widgets and copyright */
+}
+
+.footer-style-4 .copyright-wrapper {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #ddd; /* Optional: Add a separator line */
+  padding-top: 15px;
+}
+.footer-logo-section {
+  margin-right: 40px; /* Adds spacing to the right of the logo */
+}
+
+.footer-quick-links {
+  margin-left: 20px; /* Optional: Adds spacing to the left of quick links */
+}

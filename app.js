@@ -40,10 +40,14 @@ app.post("/contact", (req, res) => {
     host: "mail.hempongroup.co.ke", // Replace with cPanel mail server (e.g., mail.yourdomain.com)
     port: 465, // Use SSL port for secure email
     secure: true, // Use SSL
+    // auth: {
+    //   user: "info@hempongroup.co.ke", // Replace with your cPanel email address
+    //   pass: "magati@9620", // Replace with your email password
+    // },
     auth: {
-      user: "info@hempongroup.co.ke", // Replace with your cPanel email address
-      pass: "magati@9620", // Replace with your email password
-    },
+  user: process.env.EMAIL_USER,
+  pass: process.env.EMAIL_PASS,
+},
   });
 
   const mailOptions = {
@@ -70,7 +74,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-auth: {
-  user: process.env.EMAIL_USER,
-  pass: process.env.EMAIL_PASS,
-},
+
